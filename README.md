@@ -28,4 +28,11 @@ add this to your package.json under scripts:
 this will allow you to recopy the current contents of your pokedex into your public folder (when you make changes to pokedex)
 
 commit
+FYI - you should be doing all of this in your master branch
+
+in terminal: git remote -v
+then: heroku create whatever-you-want-to-name (if you dont' give a name it will assign you one)
+then: git remote -v (you will see that you have a heroku git url and a regular git url)
+then: git push heroku master
+if you happen to be working in a branch other than master, do git push heroku m
 
